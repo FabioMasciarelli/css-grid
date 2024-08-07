@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 15px;
+    padding: 15px;
+    height: 100vh;
+}
+
+header, footer {
+    grid-column: 1 / -1;
+}
+
+header {
+    background-color: peru;
+}
+
+footer {
+    background-color: teal;
+}
+
+.item {
+    background-color: purple;
+    grid-row: 2 / 5;
+}
+
+.small {
+    background-color: pink;
+    grid-row: 2 / 4;
+}
